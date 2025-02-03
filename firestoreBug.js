@@ -1,0 +1,1 @@
+In a Firebase project, I encountered an issue where data wasn't being written to Firestore despite seemingly correct code. The issue stemmed from an incorrect usage of the `set()` method.  I was trying to update a document, but I was using `set()` which overwrites the entire document instead of updating specific fields.  This resulted in the loss of other data in the document.
